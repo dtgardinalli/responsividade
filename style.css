@@ -5,6 +5,7 @@ body{
                         "header section aside div"
                         "footer footer footer footer";
 grid-template-rows: 20vh 70vh 40vh;
+font-family: 'Shadows Into Light', cursive;
 }
 
 nav{
@@ -13,6 +14,16 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+color:  blueviolet;
+transition: 3s;
 }
 
 nav img{
@@ -58,7 +69,7 @@ nav img{
                             "aside aside aside aside"
                             "div div div div"
                             "footer footer footer footer";
-grid-template-rows: 20vh 50vh 50vh 50vh 50vh 40vh;
+grid-template-rows: 20vh 70vh 70vh 70vh 70vh 40vh;
     }
     nav{
         background-color: red;
@@ -86,4 +97,21 @@ div{
 footer{
     grid-area: footer;
 background-color: lime;
+display: flex;
+justify-content: center;
+}
+
+.memesGretchen{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    max-width: 90%;
+    border: 3px dotted black;
+    padding: 4px;
+}
+header, section, aside, div{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
 }
